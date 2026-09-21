@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кросслов — уютная игра в слова | AUGUST Ltd</title>
-    <meta name="description" content="Кросслов — уютная игра в слова. Ищите слова, слушайте спокойную музыку и наслаждайтесь атмосферой. Скачайте в RuStore.">
+    <meta name="description" content="Кросслов — уютная игра в слова. Ищите слова, слушайте спокойную музыку и наслаждайтесь атмосферой.">
     <style>
         :root {
             --primary-purple: #7b2cbf;
@@ -74,12 +74,14 @@
             object-fit: cover;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: var(--text-white);
-            margin-bottom: 12px;
-            text-shadow: 0 0 20px rgba(157, 78, 221, 0.8);
-            letter-spacing: 2px;
+        /* Логотип вместо заголовка */
+        .logo-title {
+            max-width: 90%;
+            width: 500px;
+            height: auto;
+            margin: 0 auto 12px;
+            display: block;
+            filter: drop-shadow(0 0 20px rgba(157, 78, 221, 0.8));
         }
 
         .subtitle {
@@ -96,26 +98,6 @@
             margin-bottom: 32px;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-purple-light) 100%);
-            color: var(--text-white);
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(123, 44, 191, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .badge:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(157, 78, 221, 0.8);
-            background: linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple) 100%);
         }
 
         /* Sections */
@@ -308,11 +290,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
+            .logo-title { width: 90%; }
             .app-icon { width: 110px; height: 110px; }
             .screenshots img { height: 400px; }
             .privacy-content { padding: 24px; }
-            .badge { padding: 14px 30px; font-size: 1rem; }
         }
     </style>
 </head>
@@ -323,10 +304,10 @@
             <div class="app-icon">
                 <img src="https://raw.githubusercontent.com/StLeonid/StLeonid.github.io/main/icon.png" alt="Кросслов">
             </div>
-            <h1>КРОССЛОВ</h1>
+            <!-- Логотип вместо текстового заголовка -->
+            <img src="https://raw.githubusercontent.com/StLeonid/StLeonid.github.io/main/1-logo-purple-ru.png" alt="Кросслов" class="logo-title">
             <p class="subtitle">Уютная игра в слова</p>
             <p class="developer">Разработчик: AUGUST Ltd</p>
-            <a href="https://www.rustore.ru/catalog/app/com.August.WordCross" class="badge">Скачать в RuStore</a>
         </div>
     </header>
 
@@ -406,7 +387,6 @@
             <p>
                 <a href="#privacy">Политика конфиденциальности</a>
                 <a href="mailto:help@crosword.ru">Поддержка</a>
-                <a href="https://www.rustore.ru/catalog/app/com.August.WordCross">RuStore</a>
             </p>
             <p class="copyright">© 2026 AUGUST Ltd. Все права защищены.</p>
         </div>
