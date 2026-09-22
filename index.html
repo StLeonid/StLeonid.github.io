@@ -6,25 +6,32 @@
     <title>КРОССЛОВ — Играй в слова</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Плавное покачивание логотипа */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
 
     <div class="container mx-auto px-4 py-8 max-w-md">
-        <!-- Иконка и название игры -->
+        <!-- Логотип с анимацией -->
         <div class="text-center mb-8">
-            <img src="icon.png" alt="КРОССЛОВ" class="w-32 h-32 rounded-3xl mx-auto mb-4 border-4 border-purple-500 shadow-lg">
-            <h1 class="text-4xl font-bold text-purple-400">КРОССЛОВ</h1>
-            <p class="text-gray-400 mt-2">Играй в слова, собирай звёзды!</p>
+            <img src="1-logo-purple-ru.png" alt="КРОССЛОВ" class="w-full max-w-xs mx-auto mb-4 animate-float">
         </div>
 
         <!-- Ссылки -->
         <div class="space-y-4 mb-8">
-            <!-- ЗАМЕНИТЕ # НА ССЫЛКУ НА RUSTORE -->
             <a href="#" class="flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
                 <i class="fas fa-shopping-bag mr-3"></i>
                 Скачать в RuStore
             </a>
-            <!-- ЗАМЕНИТЕ # НА ССЫЛКУ НА ВК -->
             <a href="#" class="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
                 <i class="fab fa-vk mr-3"></i>
                 Мы во ВКонтакте
